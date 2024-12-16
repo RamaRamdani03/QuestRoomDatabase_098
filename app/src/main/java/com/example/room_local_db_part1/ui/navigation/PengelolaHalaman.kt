@@ -12,7 +12,6 @@ import com.example.room_local_db_part1.ui.view.mahasiswa.DestinasiInsert
 import com.example.room_local_db_part1.ui.view.mahasiswa.DetailMhsView
 import com.example.room_local_db_part1.ui.view.mahasiswa.HomeMhsView
 import com.example.room_local_db_part1.ui.view.mahasiswa.InsertMhsView
-import com.example.room_local_db_part1.ui.view.mahasiswa.UpdateMhsView
 
 @Composable
 fun PengelolaHalaman(
@@ -36,6 +35,43 @@ fun PengelolaHalaman(
                 },
                 modifier = Modifier
             )
+        }
+        composable(
+            route = DestinasiInsert.route
+        ) {
+            InsertMhsView(
+                onBack = {
+                    navController.popBackStack()
+                },
+                onNavigate = {
+                    navController.popBackStack()
+                },
+                modifier = Modifier
+            )
+        }
+        composable(
+            DestinasiDetail.routesWithArg,
+            arguments = listOf(
+                navArgument(DestinasiDetail.NIM) {
+                    type = NavType.StringType
+                }
+            )
+        ) {
+            val nim = it.arguments?.getString(DestinasiDetail.NIM)
+            nim?.let { nim ->
+                DetailMhsView(
+                    onBack = {
+                        navController.popBackStack()
+                    },
+                    onEditClick = {
+                        navController.navigate("${DestinasiUpdate.route}/$it")
+                    },
+                    modifier = modifier,
+                    onDeleteClick = {
+                        navController.popBackStack()
+                    }
+                )
+            }
         }
     }
 }
