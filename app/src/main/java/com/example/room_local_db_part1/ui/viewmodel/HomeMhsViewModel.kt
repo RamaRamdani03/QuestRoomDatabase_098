@@ -2,6 +2,7 @@ package com.example.room_local_db_part1.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.room_local_db_part1.data.entity.Mahasiswa
 import com.example.room_local_db_part1.repository.RepositoryMhs
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.SharingStarted
@@ -46,3 +47,10 @@ class MahasiswaHomeViewModel (
         )
 
 }
+
+data class HomeUiState (
+    val listMhs: List<Mahasiswa> = listOf(),
+    val isLoading: Boolean = false,
+    val isError: Boolean = false,
+    val errorMessage: String = ""
+)
