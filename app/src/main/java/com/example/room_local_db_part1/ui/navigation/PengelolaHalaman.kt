@@ -12,6 +12,7 @@ import com.example.room_local_db_part1.ui.view.mahasiswa.DestinasiInsert
 import com.example.room_local_db_part1.ui.view.mahasiswa.DetailMhsView
 import com.example.room_local_db_part1.ui.view.mahasiswa.HomeMhsView
 import com.example.room_local_db_part1.ui.view.mahasiswa.InsertMhsView
+import com.example.room_local_db_part1.ui.view.mahasiswa.UpdateMhsView
 
 @Composable
 fun PengelolaHalaman(
