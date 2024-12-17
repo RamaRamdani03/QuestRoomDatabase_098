@@ -6,3 +6,7 @@ Tambah Mahasiswa
 ![Tambah Mahasiswa](https://github.com/user-attachments/assets/ff1c864c-871c-47fe-aa1f-b6658303d6a4)
 Tampilan saat delet
 ![Tampilan saat delete data](https://github.com/user-attachments/assets/77783947-817f-4f9f-a436-41e67847844e)
+Tampilan edit
+![Tampilan saat delete data](https://github.com/user-attachments/assets/a7bd8c9c-7a1f-46e1-a8ad-7d649580f906)
+Hasil Edit
+![Hasil edit](https://github.com/user-attachments/assets/4b86249a-3f79-4676-aca3-f312723646fd)
