@@ -1,6 +1,3 @@
-Link Vidio Presentasi:
-https://drive.google.com/file/d/1-kekqUJ9sZ3q__bj36nj5ZMazI7dBVHz/view?usp=sharing
-
 Daftar Mahasiswa
 ![Daftar Mahasiswa](https://github.com/user-attachments/assets/bf0d5c93-77f7-4381-b685-a69392365593)
 Detail Mahasiswa
